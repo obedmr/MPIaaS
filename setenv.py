@@ -25,12 +25,12 @@ def vagrant_up():
 def create_containers(virtual=True, clients_count=2, clients=[]):
     """ Creates Linux Containers on Clients """
     if virtual:
-        for client in range(1, clients_count + 1):
+        for client in range(0, clients_count):
             clients.append({"host": "localhost", "port": DOCKER_TCP + client})
             
         for client in clients:
             client_number = client["port"] - DOCKER_TCP
-            print("Creating Containers in Client #" + client_number)
+            print("Creating Containers in Client #" + str(client_number))
             os.environ['DOCKER_HOST'] = "tcp://localhost:%d" % client["port"]
             execute("./docker-1.5.0 pull ubuntu")
 
