@@ -9,12 +9,15 @@ Requirements
 Initial Setup
 -------------
 
-`./setenv.py`
+```
+	./setenv.py
+```
 	
 How to run Python in CoreOS Containers
 --------------------------------------
 
-`cd coreos-vagrant`
-`vagrant ssh core-01`
-`docker run -it ubuntu /usr/bin/python3`
-
+```
+	cd coreos-vagrant
+	vagrant ssh core-01
+	docker run -it ubuntu /usr/bin/python3
+```
