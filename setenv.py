@@ -12,6 +12,9 @@ def execute(command):
 
 def vagrant_up():
     """ Vagrant startup """
+    execute("wget https://get.docker.com/builds/Linux/x86_64/docker-1.5.0")
+    execute("chmod 755 ./docker-1.5.0")
+    execute("git clone https://github.com/coreos/coreos-vagrant.git")
     execute("cp user-data coreos-vagrant/")
     execute("cp config.rb coreos-vagrant/")
     execute("cd coreos-vagrant/ ; vagrant up")
@@ -25,7 +28,7 @@ def create_containers(virtual=True, clients_count=2, clients=[]):
         for client in clients:
             print ("Creating Containers in Client #", client["port"] - DOCKER_TCP)
             os.environ['DOCKER_HOST'] = "tcp://localhost:%d" % client["port"]
-            execute("docker pull ubuntu")
+            execute("./docker-1.5.0 pull ubuntu")
     
 
 if __name__ == "__main__":
