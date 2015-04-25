@@ -4,11 +4,13 @@ import subprocess
 import os
 import json
 
-DOCKER_TCP=2375
+DOCKER_TCP = 2375
+
 
 def execute(command):
     """ Bash command helper """
     return subprocess.call(command, shell=True)
+
 
 def vagrant_up():
     """ Vagrant startup """
@@ -19,17 +21,19 @@ def vagrant_up():
     execute("cp config.rb coreos-vagrant/")
     execute("cd coreos-vagrant/ ; vagrant up")
 
+
 def create_containers(virtual=True, clients_count=2, clients=[]):
     """ Creates Linux Containers on Clients """
     if virtual:
-        for client in range(1,clients_count + 1):
+        for client in range(1, clients_count + 1):
             clients.append({"host": "localhost", "port": DOCKER_TCP + client})
             
         for client in clients:
-            print ("Creating Containers in Client #", client["port"] - DOCKER_TCP)
+            client_number = client["port"] - DOCKER_TCP
+            print("Creating Containers in Client #" + client_number)
             os.environ['DOCKER_HOST'] = "tcp://localhost:%d" % client["port"]
             execute("./docker-1.5.0 pull ubuntu")
-    
+
 
 if __name__ == "__main__":
 
