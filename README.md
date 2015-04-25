@@ -9,7 +9,7 @@ Requirements
 Initial Setup
 -------------
 Run:
-	./setenv.py
+`./setenv.py`
 	
 How to run Python in CoreOS Containers
 --------------------------------------
