@@ -104,3 +104,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Docker binary
+docker-1.5.0
+
+# coreos-vagrant
+coreos-vagrant/
