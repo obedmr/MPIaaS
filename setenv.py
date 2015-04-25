@@ -22,7 +22,7 @@ def vagrant_up():
     execute("cd coreos-vagrant/ ; vagrant up")
 
 
-def create_containers(virtual=True, clients_count=2, clients=[]):
+def create_containers(virtual=True, clients_count=3, clients=[]):
     """ Creates Linux Containers on Clients """
     if virtual:
         for client in range(0, clients_count):
