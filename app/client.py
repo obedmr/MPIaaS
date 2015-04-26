@@ -4,7 +4,7 @@ import sys
 
 TCP_IP = '127.0.0.1'
 TCP_PORT = 5005
-BUFFER_SIZE = 1024
+BUFFER_SIZE = 4096
 MESSAGE = "Hello, World!"
 
 TCP_IP = str(sys.argv[1])

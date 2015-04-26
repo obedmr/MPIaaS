@@ -3,6 +3,10 @@ import argparse
 import sys
 import logging
 import ConfigParser
+import time
+import socket
+
+from test import ThreadingServer
 
 CONFIG_FILE = "config.ini"
 CONFIG_CONF = "setup.conf"
@@ -10,6 +14,13 @@ CONFIG_CONF = "setup.conf"
 GLOBAL_TEST="busybox"
 GLOBAL_OS="Ubuntu"
 GLOBAL_HW="VM"
+
+
+def wait_for_clients(counter,delay):
+    while counter:
+        time.sleep(delay)
+        print "Wait for clients"
+        counter -= 1
 
 def print_config(args):
 
@@ -91,7 +102,28 @@ def main():
     except IOError, msg:
         logging.warning("Error in parsing")
         parser.error(str(msg))
-        
+
+    setup = ConfigParser.ConfigParser()
+    setup.read(CONFIG_CONF)
+
+    config = ConfigParser.ConfigParser()
+    config.read(CONFIG_FILE)
+
+    test = setup.get('CONFIG', 'test')
+    operating_system = setup.get('CONFIG', 'os')
+    hw = setup.get('CONFIG', 'hw')
+
+    cmd = config.get("TESTS",test)
+
+    # if VM , boot VM else send setup to client
+    if hw == "VM":
+        #start_vms()
+        print ("Starting VMS...")
+    else:
+        print("Running in HW")
+
+    ThreadingServer()
+    wait_for_clients(5,2)
 
 if __name__ == "__main__":
     main()
