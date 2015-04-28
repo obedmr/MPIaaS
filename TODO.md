@@ -12,4 +12,7 @@ Infrastructure Setup
 
 MPI Implementation
 ---------------------
-- [VictorRodriguez]Initial commit
+- [VictorRodriguez]Implement robust client server that support multiple clients
+- [VictorRodriguez]Generate hostname file with real ips on the fly ( after the
+  clients connect to the server)
+
