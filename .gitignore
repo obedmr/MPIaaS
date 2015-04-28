@@ -110,3 +110,6 @@ docker-1.5.0
 
 # coreos-vagrant
 coreos-vagrant/
+
+# Temporal docker containers location
+.tmp/
