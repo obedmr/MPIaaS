@@ -13,3 +13,4 @@ RUN cat /tmp/yaourt.repo >> /etc/pacman.conf
 RUN pacman-db-upgrade
 RUN pacman -Syu --noconfirm yaourt
 RUN su builder -c "yaourt -Sy --noconfirm mpich"
+RUN rm -rf /var/cache/pacman/pkg/*x
