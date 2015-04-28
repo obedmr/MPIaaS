@@ -6,7 +6,7 @@ import ConfigParser
 import time
 import socket
 
-from test import ThreadingServer
+from server import ThreadingServer
 
 CONFIG_FILE = "config.ini"
 CONFIG_CONF = "setup.conf"
@@ -123,7 +123,7 @@ def main():
         print("Running in HW")
 
     ThreadingServer()
-    wait_for_clients(5,2)
+    wait_for_clients(50,10)
 
 if __name__ == "__main__":
     main()
