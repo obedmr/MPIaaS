@@ -5,8 +5,8 @@ import logging
 import ConfigParser
 import time
 import socket
+import os
 
-from server import ThreadingServer
 
 CONFIG_FILE = "config.ini"
 CONFIG_CONF = "setup.conf"
@@ -122,8 +122,9 @@ def main():
     else:
         print("Running in HW")
 
-    ThreadingServer()
-    wait_for_clients(50,10)
+    os.system("python echoserv.py &")
+
+    wait_for_clients(20,2)
 
 if __name__ == "__main__":
     main()
