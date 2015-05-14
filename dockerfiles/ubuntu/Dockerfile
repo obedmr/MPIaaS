@@ -11,3 +11,11 @@ RUN apt-get -y update
 
 # Install and configure custom software
 RUN apt-get -y install mpich python3
+
+# Intall python2 and twisted
+RUN apt-get -y install python python-twisted
+
+# Setup ssh keys
+RUN mkdir /home/mpiuser/.ssh
+COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
+RUN chown -R mpiuser /home/mpiuser/.ssh 

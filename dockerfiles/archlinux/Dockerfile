@@ -16,3 +16,11 @@ RUN wget http://share.obedmr.com/archlinux/mpich-3.1.4-1-x86_64.pkg.tar.xz
 RUN pacman -U --noconfirm mpich-3.1.4-1-x86_64.pkg.tar.xz
 RUN rm *.pkg.tar.xz
 RUN echo "export PATH=$PATH:/opt/mpich/bin" >> /etc/profile
+
+# Install python2 and twisted
+RUN pacman -Sy --noconfirm python2 python2-twisted
+
+# Setup ssh keys
+RUN mkdir /home/mpiuser/.ssh
+COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
+RUN chown -R mpiuser /home/mpiuser/.ssh 

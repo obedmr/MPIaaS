@@ -18,3 +18,12 @@ RUN yum -y install mpich python3 --nogpgcheck
 
 # Add mpich to PATH
 RUN echo "PATH=$PATH:/usr/lib64/mpich/bin" >> /etc/profile
+
+# Install twisted
+RUN yum clean all
+RUN yum -y install python-twisted-core --nogpgcheck
+
+# Setup ssh keys
+RUN mkdir /home/mpiuser/.ssh
+COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
+RUN chown -R mpiuser /home/mpiuser/.ssh 
