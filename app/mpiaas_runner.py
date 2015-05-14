@@ -181,7 +181,8 @@ def main():
 		# set up
         cmd = "export DOCKER_HOST=tcp://%s:2375" % str(client.strip())
         print cmd
-        os.system(cmd)
+        value = "tcp://%s:2375" % str(client.strip())
+        os.environ["DOCKER_HOST"] = value
 
         # Get iamges
         cmd = "./docker-1.5.0 images | grep mpi | awk '{print $1}'"
