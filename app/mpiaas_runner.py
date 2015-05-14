@@ -6,7 +6,8 @@ import ConfigParser
 import time
 import socket
 import os
-
+import subprocess
+import signal
 
 CONFIG_FILE = "config.ini"
 CONFIG_CONF = "setup.conf"
@@ -69,6 +70,17 @@ def print_config(args):
     parser.write(file_conf)
     file_conf.close()
 
+def kill_server():
+    # kill all the python process
+    p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+    out, err = p.communicate()
+    for line in out.splitlines():
+        if 'python' in line:
+            print line
+            pid = int(line.split(None, 1)[0])
+            print pid
+            os.kill(pid, signal.SIGKILL)
+
 def main():
 
     parser = argparse.ArgumentParser(description='Run some funy tests !!')
@@ -84,6 +96,9 @@ def main():
     run_group_list.add_argument('--hw', action="store", dest="hw",\
             help="HW to run the tests")
 
+    run_group_list.add_argument('--killserver', action="store_true",
+            dest="kill_server",\
+            help="Kill the current servers running")
 
     info_group_list = group.add_mutually_exclusive_group()
 
@@ -102,6 +117,10 @@ def main():
     except IOError, msg:
         logging.warning("Error in parsing")
         parser.error(str(msg))
+
+
+    if args.kill_server:
+        kill_server()
 
     setup = ConfigParser.ConfigParser()
     setup.read(CONFIG_CONF)
