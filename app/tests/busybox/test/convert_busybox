@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+#
+#COMPONENT="Kernel & Drivers"
+XML_FILE=/opt/tmp/busybox.result.xml
+LOGNAME=/home/cats/logfileshort
+
+if [ ! -f $XML_FILE];
+then
+        rm $XML_FILE
+fi
+
+echo '<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet type="text/xsl" href="testresult.xsl"?>
+<test_definition><environment build_id="" device_id="localhost" device_model="" device_name="N/A" host="Linux-3.17.2-x86_64-with-glibc2.2.5" lite_version="3.1.2" manufacturer="" resolution="N/A" screen_size="N/A"><other /></environment>
+<summary test_plan_name="Empty test_plan_name"><start_at>2014-12-23_05_04_49</start_at><end_at>2014-12-23_05_04_57</end_at></summary>
+  <suite name="GDC_TEST_AUTOMATION_KOJI">
+    <set name="clr-test-cases" set_debug_msg="bat.result.dlog">' >> $XML_FILE
+#cat $LOGNAME | awk '{print $2}' | sort  > tmp
+
+while read -r line
+do
+        result=`echo $line | awk ' {print $1}'  | sed 's/://g'`
+        testdescription=`echo   $line  | awk '{$1=""; print $0}' | sed 's/[^0-9a-zA-Z, .?]*//g'`
+        testname=`echo $line | awk '{print $2}'`
+echo $testdescription
+echo '  <testcase component="BusyBox" execution_type="auto" id="' $testdescription '" priority="P1" purpose="Test: '$testdescription ' integrity" result="'$result'" status="ready" type="functional_positive">
+        <description>
+          <pre_condition />
+          <post_condition />
+          <steps>
+            <step order="0">
+              <step_desc>1</step_desc>
+              <expected>1</expected>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="14400">/root/clr-test-cases/acl/clr-run-test-quick</test_script_entry>
+        </description>
+      <result_info><actual_result>'$result'</actual_result><start>2014-12-23 05:04:56</start><end>2014-12-23 05:04:56</end><stdout><![CDATA[]]></stdout><stderr><![CDATA[/bin/sh: /root/clr-test-cases/acl/clr-run-test-quick: No such file or directory\n]]></stderr></result_info></testcase>' >> $XML_FILE
+done < $LOGNAME
+echo '</set>
+  </suite>
+</test_definition>' >> $XML_FILE

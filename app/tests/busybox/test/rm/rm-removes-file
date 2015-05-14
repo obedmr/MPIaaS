@@ -1,0 +1,3 @@
+touch foo
+rm foo
+test ! -f foo

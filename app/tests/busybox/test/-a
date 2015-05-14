@@ -1,0 +1,4489 @@
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input
+echo -ne '' >input logs/awk_F_case_0
+echo -ne '' >input logs/awk_F_case_1
+echo -ne '' >input logs/awk_F_case_2
+echo -ne '' >input logs/awk_F_case_3
+echo -ne '' >input logs/awk_F_case_4
+echo -ne '' >input logs/awk_F_case_5
+echo -ne '' >input logs/awk_F_case_6
+echo -ne '' >input logs/awk_F_case_7
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_operator_
+echo -ne '' >input logs/awk_if_string_
+echo -ne '' >input logs/awk_bitwise_op
+echo -ne '' >input logs/awk_hex_const_1
+echo -ne '' >input logs/awk_hex_const_2
+echo -ne '' >input logs/awk_oct_const
+echo -ne '' >input logs/awk_floating_const_with_leading_zeroes
+echo -ne '' >input logs/awk_long_field_sep
+echo -ne '' >input logs/awk_F_handles_escapes
+echo -ne '' >input logs/awk_gsub_falls_back_to_nonextendedregex
+echo -ne '' >input logs/awk_gcc_build_bug
+echo -ne '' >input logs/awk_NF_in_BEGIN
+echo -ne '' >input logs/awk_string_cast_bug_725
+echo -ne '' >input logs/awk_handles_whitespace_before_array_subscript
+echo -ne '' >input logs/awk_nested_loops_with_the_same_variable
+echo -ne '' >input logs/awk_FS_assignment
+echo -ne '' >input logs/awk_large_integer
+echo -ne '' >input logs/awk_lengtharray
+echo -ne 'do re mi
+' >input logs/awk_f_and_ARGC
+echo -ne 'do re mi
+' >input logs/awk_e_and_ARGC
+echo -ne '\x42\x5a\x68\x39\x31\x41\x59\x26\x53\x59\x63\x3e\xd6\xe2\x00\x00\x00\xc1\x00\x00\x10\x20\x00\x20\x00\x21\x00\x82\xb1\x77\x24\x53\x85\x09\x06\x33\xed\x6e\x20' >input logs/bzcat_can_print_many_files
+echo -ne '\x42\x5a\x68\x39\x17\x72\x45\x38\x50\x90\x00\x00\x00\x00' >input logs/bzcat_can_handle_compressed_zerolength_bzip2_files
+echo -ne '456
+abc
+' >input logs/comm_test_1
+echo -ne '456
+abc
+' >input logs/comm_test_2
+echo -ne 'abc
+xyz
+' >input logs/comm_test_3
+echo -ne 'abc
+xyz
+' >input logs/comm_test_4
+echo -ne '123
+abc
+' >input logs/comm_test_5
+echo -ne '123
+abc
+' >input logs/comm_test_6
+echo -ne 'abc' >input logs/comm_unterminated_line_1
+echo -ne 'abc' >input logs/comm_unterminated_line_2
+echo -ne 'the quick brown fox
+' >input logs/cut__stdin_and_multi_file_handling
+echo -ne '' >input logs/find_type_f
+echo -ne '' >input logs/find_exec_exitcode_1
+echo -ne '' >input logs/find_exec_exitcode_2
+echo -ne '' >input logs/find_exec_exitcode_3
+echo -ne '' >input logs/find_exec_exitcode_4
+echo -ne '' >input logs/fold_s
+echo -ne '' >input logs/fold_w1
+echo -ne '' >input logs/fold_with_NULs
+echo -ne '' >input logs/fold_sw66_with_unicode_input
+echo -ne '' >input logs/grep_exit_with_error
+echo -ne '' >input logs/grep_exit_success
+echo -ne '' >input logs/grep_default_to_stdin
+echo -ne '' >input logs/grep__specify_stdin
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_input_specify_file
+echo -ne 'bug' >input logs/grep_no_newline_at_EOL
+echo -ne 'one
+two
+three
+three
+three
+' >input logs/grep_two_files
+echo -ne 'one
+two
+three
+' >input logs/grep__infile_specify_stdin_and_file
+echo -ne '' >input logs/grep__nofile_specify_stdin_and_nonexisting_file
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_q__nofile_specify_stdin_and_nonexisting_file,_match
+echo -ne '' >input logs/grep_s_nofile_nonexisting_file,_no_match
+echo -ne '' >input logs/grep_s_nofile__stdin_and_nonexisting_file,_match
+echo -ne 'one
+two
+' >input logs/grep_handles_multiple_regexps
+echo -ne 'one
+two
+' >input logs/grep_F_handles_multiple_expessions
+echo -ne 'FOO
+' >input logs/grep_F_handles_i
+echo -ne 'tw
+two
+three
+' >input logs/grep_can_read_regexps_from_stdin
+echo -ne 'foo
+' >input logs/grep_x_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_partial_match_2
+echo -ne 'foo
+' >input logs/grep_x_F_full_match
+echo -ne 'foo bar
+' >input logs/grep_x_F_partial_match_1
+echo -ne 'bar foo
+' >input logs/grep_x_F_partial_match_2
+echo -ne '' >input logs/grep_E_supports_extended_regexps
+echo -ne '' >input logs/grep_is_also_egrep
+echo -ne '' >input logs/egrep_is_not_case_insensitive
+echo -ne '' >input logs/grep_E_o_prints_all_matches
+echo -ne '' >input logs/grep_o_does_not_loop_forever
+echo -ne '' >input logs/grep_o_does_not_loop_forever_on_zerolength_match
+echo -ne '' >input logs/grep_f_EMPTYFILE
+echo -ne '' >input logs/grep_v_f_EMPTYFILE
+echo -ne 'foop
+' >input logs/grep_Fw_matches_only_words
+echo -ne 'foop foo
+' >input logs/grep_Fw_doesnt_stop_on_1st_mismatch
+echo -ne 'foop foo
+' >input logs/grep_w_doesnt_stop_on_1st_mismatch
+echo -ne 'strstr
+' >input logs/grep_w_str_doesnt_match_str_not_at_the_beginning
+echo -ne 'anything
+' >input logs/grep_w__doesnt_hang
+echo -ne 'wordword
+' >input logs/grep_w_word_doesnt_match_wordword
+echo -ne 'bword,word
+wordb,word
+bwordb,word
+' >input logs/grep_w_word_match_second_word
+echo -ne '' >input logs/grep_r_on_symlink_to_dir
+echo -ne '' >input logs/grep_r_on_dirsymlink_to_dir
+echo -ne '' >input logs/ls_symlinktodir
+echo -ne '' >input logs/od_b
+echo -ne '' >input logs/od_b_traditional
+echo -ne 'HELLO' >input logs/od_b_traditional_FILE
+echo -ne '' >input logs/pidof_exit_with_error
+echo -ne '' >input logs/pidof_exit_with_success
+echo -ne '' >input logs/pidof_s
+echo -ne '' >input logs/pidof_o_PPID_NOP
+echo -ne '' >input logs/pidof_o_init
+echo -ne '' >input logs/printf_repeatedly_uses_pattern_for_each_argv
+echo -ne '' >input logs/printf_understands_b_escapedstring
+echo -ne '' >input logs/printf_understands_d_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_s_x_y_zTAIL
+echo -ne '' >input logs/printf_understands_23.12f
+echo -ne '' >input logs/printf_understands_.f
+echo -ne '' >input logs/printf_understands_f_with_negative_width
+echo -ne '' >input logs/printf_understands_.f_with_negative_precision
+echo -ne '' >input logs/printf_understands_.f_with_negative_widthprecision
+echo -ne '' >input logs/printf_understands_zd
+echo -ne '' >input logs/printf_understands_ld
+echo -ne '' >input logs/printf_understands_Ld
+echo -ne '' >input logs/readlink_on_a_file
+echo -ne '' >input logs/readlink_on_a_link
+echo -ne '' >input logs/readlink_f_on_a_file
+echo -ne '' >input logs/readlink_f_on_a_link
+echo -ne '' >input logs/readlink_f_on_an_invalid_link
+echo -ne '' >input logs/readlink_f_on_a_wierd_dir
+echo -ne '' >input logs/sed_no_files_stdin
+echo -ne '' >input logs/sed_explicit_stdin
+echo -ne '' >input logs/sed_handles_empty_lines
+echo -ne '' >input logs/sed_stdin_twice
+echo -ne '' >input logs/sed_accepts_blanks_before_command
+echo -ne '' >input logs/sed_accepts_newlines_in_e
+echo -ne '' >input logs/sed_accepts_multiple_e
+echo -ne '' >input logs/sed_n
+echo -ne '' >input logs/sed_with_empty_match
+echo -ne '' >input logs/sed_sp
+echo -ne '' >input logs/sed_n_sp
+echo -ne '' >input logs/sed_sg_exhaustive
+echo -ne '' >input logs/sed_s_arbitrary_delimiter
+echo -ne '' >input logs/sed_s_chains
+echo -ne '' >input logs/sed_s_chains2
+echo -ne '' >input logs/sed_s_delimiter
+echo -ne '' >input logs/sed_s_with__GNU_ext
+echo -ne '' >input logs/sed_b_branch
+echo -ne '' >input logs/sed_b_branch_with_no_label_jumps_to_end
+echo -ne '' >input logs/sed_t_testbranch
+echo -ne '' >input logs/sed_t_testbranch_clears_test_bit
+echo -ne '' >input logs/sed_T_testbranch
+echo -ne '' >input logs/sed_n_flushes_pattern_space,_terminates_early
+echo -ne '' >input logs/sed_N_flushes_pattern_space_GNU_behavior
+echo -ne '' >input logs/sed_N_test2
+echo -ne '' >input logs/sed_N_test3
+echo -ne '' >input logs/sed_address_match_newline
+echo -ne '' >input logs/sed_N_stops_at_end_of_input_and_P_prints_to_first_newline_only
+echo -ne '' >input logs/sed_G_append_hold_space_to_pattern_space
+echo -ne '' >input logs/sed_d_ends_script_iteration
+echo -ne '' >input logs/sed_d_ends_script_iteration_2
+echo -ne '' >input logs/sed_embedded_NUL
+echo -ne '' >input logs/sed_embedded_NUL_g
+echo -ne '' >input logs/sed_NUL_in_command
+echo -ne 'woo
+' >input logs/sed_normal_newlines
+echo -ne 'woo
+' >input logs/sed_leave_off_trailing_newline
+echo -ne 'woo' >input logs/sed_autoinsert_newline
+echo -ne '' >input logs/sed_empty_file_plus_cat
+echo -ne 'one
+two' >input logs/sed_cat_plus_empty_file
+echo -ne '' >input logs/sed_append_autoinserts_newline
+echo -ne '' >input logs/sed_insert_doesnt_autoinsert_newline
+echo -ne '' >input logs/sed_print_autoinsert_newlines
+echo -ne 'one' >input logs/sed_print_autoinsert_newlines_two_files
+echo -ne 'no
+' >input logs/sed_noprint,_no_match,_no_newline
+echo -ne 'a woo
+b no' >input logs/sed_selective_matches_with_one_nl
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_insert_newline
+echo -ne 'a woo
+b woo' >input logs/sed_selective_matches_noinsert_newline
+echo -ne 'one' >input logs/sed_clusternewline
+echo -ne 'thingy' >input logs/sed_substwrite
+echo -ne 'a logs/sed_trailing_NUL
+echo -ne 'a' >input logs/sed_escaped_newline_in_command
+echo -ne '' >input logs/sed_match_EOF
+echo -ne 'one
+two' >input logs/sed_match_EOF_two_files
+echo -ne 'one
+two' >input logs/sed_match_EOF_inline
+echo -ne '' >input logs/sed_nonexistent_label
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_exit_with_error
+echo -ne '' >input logs/seq_one_argument
+echo -ne '' >input logs/seq_two_arguments
+echo -ne '' >input logs/seq_two_arguments_reversed
+echo -ne '' >input logs/seq_two_arguments_equal
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_negative_step
+echo -ne '' >input logs/seq_two_arguments_equal,_arbitrary_positive_step
+echo -ne '' >input logs/seq_count_up_by_2
+echo -ne '' >input logs/seq_count_down_by_2
+echo -ne '' >input logs/seq_count_wrong_way_1
+echo -ne '' >input logs/seq_count_wrong_way_2
+echo -ne '' >input logs/seq_count_by_.3
+echo -ne '' >input logs/seq_count_by_.30
+echo -ne '' >input logs/seq_count_by_.30_to_4.000
+echo -ne '' >input logs/seq_count_by_.9
+echo -ne '' >input logs/seq_count_by_zero
+echo -ne '' >input logs/seq_one_argument_with_padding
+echo -ne '' >input logs/seq_two_arguments_with_padding
+echo -ne '' >input logs/seq_count_down_by_3_with_padding
+echo -ne '' >input logs/seq_count_by_.3_with_padding_1
+echo -ne '' >input logs/seq_count_by_.3_with_padding_2
+echo -ne 'c
+a
+b
+' >input logs/sort
+echo -ne '3
+1
+010
+' >input logs/sort_2
+echo -ne '' >input logs/sort_stdin
+echo -ne '3
+1
+010
+' >input logs/sort_numeric
+echo -ne 'point
+wook
+pabst
+aargh
+walrus
+' >input logs/sort_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_one_key
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_numeric_option_and_global_reverse
+echo -ne '42	1	3	woot
+42	1	010	zoology
+egg	1	2	papyrus
+7	3	42	soup
+999	3	0	algebra
+' >input logs/sort_key_range_with_multiple_options
+echo -ne 'c 3
+b 2
+d 2
+' >input logs/sort_key_range_with_two_k_options
+echo -ne '/a/2
+/b/1
+' >input logs/sort_with_nondefault_leading_delim_1
+echo -ne '/b/1
+/a/2
+' >input logs/sort_with_nondefault_leading_delim_2
+echo -ne '//a/2
+//b/1
+' >input logs/sort_with_nondefault_leading_delim_3
+echo -ne 'a c
+b c
+' >input logs/sort_u_should_consider_field_only_when_discarding
+echo -ne 'one logs/sort_z_outputs_NUL_terminated_lines
+echo -ne '' >input logs/sort_key_doesnt_strip_leading_blanks,_disables_fallback_global_sort
+echo -ne '222
+111
+' >input logs/sort_file_in_place
+echo -ne '' >input logs/sum_r_file_doesnt_print_files_name
+echo -ne '' >input logs/sum_r_file_file_does_print_both_names
+echo -ne '' >input logs/sum_s_file_does_print_files_name
+echo -ne '' >input logs/tail_N_with_N__file_length
+echo -ne '' >input logs/tail_c_N_with_largish_N
+echo -ne '' >input logs/test_should_be_false_1
+echo -ne '' >input logs/test__should_be_false_1
+echo -ne '' >input logs/test__should_be_true_0
+echo -ne '' >input logs/test_a_should_be_true_0
+echo -ne '' >input logs/test_help_should_be_true_0
+echo -ne '' >input logs/test_f_should_be_true_0
+echo -ne '' >input logs/test__f_should_be_false_1
+echo -ne '' >input logs/test_a__a_should_be_true_0
+echo -ne '' >input logs/test_lt__gt_should_be_false_1
+echo -ne '' >input logs/test_a_a__should_be_true_0
+echo -ne '' >input logs/test_f__a_o_b_should_be_true_0
+echo -ne '' >input logs/test__a__b_a__c__c_should_be_false_1
+echo -ne '' >input logs/test__a__b_a__c__d_should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test____should_be_true_0
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/test_____should_be_false_1
+echo -ne '' >input logs/tr_does_not_treat__in_az_as_special
+echo -ne '' >input logs/tr_understands_09AF
+echo -ne '' >input logs/tr_understands_xdigit
+echo -ne '' >input logs/tr_does_not_stop_after_digit
+echo -ne '' >input logs/tr_has_correct_xdigit_sequence
+echo -ne '' >input logs/unexpand_case_1
+echo -ne '' >input logs/unexpand_case_2
+echo -ne '' >input logs/unexpand_case_3
+echo -ne '' >input logs/unexpand_case_4
+echo -ne '' >input logs/unexpand_case_5
+echo -ne '' >input logs/unexpand_case_6
+echo -ne '' >input logs/unexpand_case_8
+echo -ne '' >input logs/uniq_exit_with_error
+echo -ne '' >input logs/uniq_exit_success
+echo -ne '' >input logs/uniq_default_to_stdin
+echo -ne '' >input logs/uniq__specify_stdin
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_specify_file
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input_outfile_two_files
+echo -ne '' >input logs/uniq_stdin_outfile
+echo -ne 'one
+two
+two
+three
+three
+three
+' >input logs/uniq_input__specify_stdout
+echo -ne '' >input logs/uniq_c_occurrence_count
+echo -ne '' >input logs/uniq_d_dups_only
+echo -ne '' >input logs/uniq_f_s_skip_fields_and_chars
+echo -ne '' >input logs/uniq_w_compare_max_characters
+echo -ne '' >input logs/uniq_s_w_skip_fields_and_compare_max_chars
+echo -ne '' >input logs/uniq_u_and_d_produce_no_output
+echo -ne '' >input logs/xargs_E__stops_on_underscore
+echo -ne '' >input logs/xargs_E_
+echo -ne '' >input logs/xargs_e_without_param
+echo -ne '' >input logs/xargs_does_not_stop_on_underscore_new_GNU_behavior
+echo -ne '' >input logs/xargs_s7_can_take_onechar_input

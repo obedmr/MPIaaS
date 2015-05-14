@@ -1,0 +1,2 @@
+touch -c foo
+test ! -f foo

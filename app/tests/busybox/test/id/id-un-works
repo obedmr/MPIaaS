@@ -1,0 +1,1 @@
+test x$(id -un) = x$(id -un)

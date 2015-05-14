@@ -1,0 +1,3 @@
+touch foo
+gzip foo
+test ! -f foo

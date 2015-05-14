@@ -1,0 +1,81 @@
+#!/bin/sh
+# Copyright 2009 by Denys Vlasenko
+# Licensed under GPLv2, see file LICENSE in this source tree.
+
+. ./testing.sh
+
+unset LANG
+unset LANGUAGE
+unset LC_COLLATE
+unset LC_ALL
+umask 022
+
+rm -rf tar.tempdir 2>/dev/null
+mkdir tar.tempdir && cd tar.tempdir || exit 1
+
+# testing "test name" "script" "expected result" "file input" "stdin"
+
+
+testing "Two zeroed blocks is a ('truncated') empty tarball" '\
+dd if=/dev/zero bs=512 count=2 2>/dev/null | tar xvf - 2>&1; echo $?
+' "\
+0
+" \
+"" ""
+SKIP=
+
+testing "Twenty zeroed blocks is an empty tarball" '\
+dd if=/dev/zero bs=512 count=20 2>/dev/null | tar xvf - 2>&1; echo $?
+' "\
+0
+" \
+"" ""
+SKIP=
+
+
+optional FEATURE_TAR_CREATE FEATURE_TAR_LONG_OPTIONS
+testing "tar --overwrite" "\
+rm -rf input_* test.tar 2>/dev/null
+ln input input_hard
+tar cf test.tar input_hard
+echo WRONG >input
+# --overwrite opens 'input_hard' without unlinking,
+# thus 'input_hard' still linked to 'input' and we write 'Ok' into it
+tar xf test.tar --overwrite 2>&1 && cat input
+" "\
+Ok
+" \
+"Ok\n" ""
+SKIP=
+
+test x"$SKIP_KNOWN_BUGS" = x"" && {
+# Needs to be run under non-root for meaningful test
+optional FEATURE_TAR_CREATE
+testing "tar writing into read-only dir" '\
+rm -rf input_* test.tar 2>/dev/null
+mkdir input_dir
+>input_dir/input_file
+chmod 550 input_dir
+tar cf test.tar input_dir
+tar tvf test.tar | sed "s/.*[0-9] input/input/"
+chmod 770 input_dir
+rm -rf input_*
+tar xf test.tar 2>&1
+echo Ok: $?
+ls -l input_dir/* . | grep input_ | sed "s/\\(^[^ ]*\\) .* input/\\1 input/"
+chmod 770 input_dir
+' "\
+input_dir/
+input_dir/input_file
+Ok: 0
+-rw-r--r-- input_dir/input_file
+dr-xr-x--- input_dir
+" \
+"" ""
+SKIP=
+}
+
+
+cd .. && rm -rf tar.tempdir || exit 1
+
+exit $FAILCOUNT

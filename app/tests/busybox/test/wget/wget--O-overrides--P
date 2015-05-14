@@ -1,0 +1,5 @@
+test x"$SKIP_INTERNET_TESTS" != x"" && exit
+
+mkdir foo
+wget -q -O index.html -P foo http://www.google.com/
+test -s index.html

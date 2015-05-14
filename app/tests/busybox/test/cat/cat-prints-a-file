@@ -1,0 +1,3 @@
+echo I WANT > foo
+cat foo >bar
+cmp foo bar

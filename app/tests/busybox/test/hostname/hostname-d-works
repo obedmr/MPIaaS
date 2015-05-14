@@ -1,0 +1,3 @@
+f=$(hostname -f).
+d=$(hostname -d)
+test x"${f#*.}" = x"$d${d:+.}"

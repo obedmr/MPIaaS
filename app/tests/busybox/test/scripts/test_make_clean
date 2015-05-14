@@ -1,0 +1,14 @@
+#!/bin/sh
+
+b=`basename $PWD`
+test "${b#}" != "$b" || { echo "Must be run in  tree"; exit 1; }
+
+cd ..
+cp -pPR "$b" .$$.test_tree
+cd .$$.test_tree
+make defconfig
+make $MAKEOPTS
+make clean
+cd ..
+diff -urp "$b" .$$.test_tree >.$$.test_tree.diff
+cat .$$.test_tree.diff

@@ -1,0 +1,36 @@
+#!/bin/bash
+COMPONENT="Kernel & Drivers"
+XML_FILE="/tmp/clearlinux/clr-test-cases.xml"
+if [! -f $XML_FILE];
+then
+	rm $XML_FILE
+fi
+	
+echo "<test_definition>
+  <suite name="GDC_TEST_AUTOMATION_KOJI">
+    <set name="clr-test-cases">" >> $XML_FILE
+    
+for i in `find -name "clr-run-test-quick" | sort`; do 
+		test_name=`dirname $i`
+        echo $i
+	pushd $test_name &> /dev/null
+        SCRIPT_PATH="$PWD"/clr-run-test-quick
+		popd &> /dev/null
+		
+echo '      <testcase component="'$COMPONENT'" execution_type="auto" id="'$test_name'" priority="P1" purpose="This test will verify '$test_name' integrity" status="ready" type="functional_positive">
+        <description>
+          <pre_condition />
+          <post_condition />
+          <steps>
+            <step order="0">
+              <step_desc>1</step_desc>
+              <expected>1</expected>
+            </step>
+          </steps>
+          <test_script_entry test_script_expected_result="0" timeout="14400">'$SCRIPT_PATH'</test_script_entry>
+        </description>
+      </testcase>' >> $XML_FILE
+done
+echo '</set>
+  </suite>
+</test_definition>' >> $XML_FILE

@@ -1,0 +1,3 @@
++ hostname -f
+hostname: Name or service not known
++ f=.

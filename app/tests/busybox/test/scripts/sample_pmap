@@ -1,0 +1,11 @@
+#!/bin/sh
+
+=../
+
+$ sleep 10 &
+pid=$!
+sleep 1
+
+echo "Memory map of '$ sleep 10':"
+size $
+pmap $pid | env - grep "^[0-9a-f][0-9a-f]* " | sort -r -t " " -k2,999

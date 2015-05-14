@@ -1,0 +1,11 @@
+#!/bin/sh
+
+b=`basename $PWD`
+test "${b#}" != "$b" || { echo "Must be run in  tree"; exit 1; }
+
+rm -rf ../testdir_make_O.$$
+mkdir ../testdir_make_O.$$
+odir=`cd ../testdir_make_O.$$ && pwd`
+test -d "$odir" || exit 1
+
+make O="$odir" $MAKEOPTS "$@" defconfig  2>&1 | tee test_make_O.log

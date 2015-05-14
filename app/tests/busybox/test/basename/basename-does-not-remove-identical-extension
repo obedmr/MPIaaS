@@ -1,0 +1,1 @@
+test xfoo = x`basename foo foo`

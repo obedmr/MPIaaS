@@ -1,0 +1,2 @@
+echo I WANT | dd of=foo 2>/dev/null
+echo I WANT | cmp foo -

@@ -1,0 +1,3 @@
+test x"$SKIP_INTERNET_TESTS" != x"" && exit
+
+wget http://www.google.com

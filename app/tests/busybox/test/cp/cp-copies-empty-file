@@ -1,0 +1,3 @@
+touch foo
+cp foo bar
+cmp foo bar
