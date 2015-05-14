@@ -195,13 +195,11 @@ def main():
         os.system(cmd)
 
 		# Remote command execution with ssh
-        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "git clone \
-                https://github.com/obedmr/MPIaaS.git "' % str(client.strip())
+        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "git clone https://github.com/obedmr/MPIaaS.git "' % str(client.strip())
         print cmd
         os.system(cmd)
 
-        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "cd \
-                MPIaaS/app/tests/busybox/ && ./busybox.sh"' % str(client.strip())
+        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "cd MPIaaS/app/tests/busybox/ && ./busybox.sh"' % str(client.strip())
         print cmd
         os.system(cmd)
 
