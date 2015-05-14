@@ -30,7 +30,7 @@ def set_containers(host, port):
     print("Creating Containers in Client #" + str(client_number))
     base_url = "tcp://%s:%d" % (host, port)
     os.environ['DOCKER_HOST'] = base_url
-    images = ['ubuntu', 'archlinux', 'fedora']
+    images = ['ubuntu', 'archlinux', 'fedora', 'client']
 
     for image in images:
         if (not os.path.exists('.tmp_mpiaas_%s' % image )):
