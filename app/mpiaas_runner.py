@@ -23,12 +23,12 @@ def wait_for_clients(counter,delay):
    
     global GLOBAL_CLIENTS_ADDR
 
-    client_count = 0
     while counter:
+
+        client_count = 0
         time.sleep(delay)
         print "Wait for clients"
         counter -= 1
-        
 
         # count the number of clients
 
@@ -38,7 +38,9 @@ def wait_for_clients(counter,delay):
                 GLOBAL_CLIENTS_ADDR.append(line.split("_")[1].replace("]",""))
                 client_count += 1
         f.close()
-        if client_count >= GLOBAL_NUM_CLIENTS:
+
+
+        if int(client_count) >= int(GLOBAL_NUM_CLIENTS):
             print "We have all the clients we need"
             break
 
@@ -78,8 +80,9 @@ def print_config(args):
             if item[0] == args.hw:
                 GLOBAL_HW=args.hw
 
-    if args.hw:
+    if args.num_clients:
             GLOBAL_NUM_CLIENTS=args.num_clients
+            print GLOBAL_NUM_CLIENTS
 
     parser = ConfigParser.SafeConfigParser()
 
@@ -105,6 +108,8 @@ def kill_server():
             os.kill(pid, signal.SIGKILL)
 
 def main():
+
+    global GLOBAL_CLIENTS_ADDR
 
     parser = argparse.ArgumentParser(description='Run some funy tests !!')
 
@@ -171,6 +176,10 @@ def main():
     # wait of clients if they all exist .. exit
     wait_for_clients(20,2)
 
+    # clean array of clients
+
+    GLOBAL_CLIENTS_ADDR = list(set(GLOBAL_CLIENTS_ADDR))
+    
     # run command
     for client in GLOBAL_CLIENTS_ADDR:
         print client.strip()
