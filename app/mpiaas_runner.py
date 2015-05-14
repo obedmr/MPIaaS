@@ -13,7 +13,7 @@ CONFIG_FILE = "config.ini"
 CONFIG_CONF = "setup.conf"
 
 GLOBAL_TEST="busybox"
-GLOBAL_OS="Ubuntu"
+GLOBAL_OS="ubuntu"
 GLOBAL_HW="VM"
 GLOBAL_NUM_CLIENTS=1
 GLOBAL_CLIENTS_ADDR = []
@@ -23,10 +23,7 @@ def wait_for_clients(counter,delay):
    
     global GLOBAL_CLIENTS_ADDR
 
-    config = ConfigParser.ConfigParser()
-    config.read(CONFIG_FILE)
     client_count = 0
-
     while counter:
         time.sleep(delay)
         print "Wait for clients"
@@ -185,12 +182,12 @@ def main():
         os.environ["DOCKER_HOST"] = value
 
         # Get iamges
-        cmd = "./docker-1.5.0 images | grep mpi | awk '{print $1}'"
-        print cmd
-        os.system(cmd)
+        # cmd = "./docker-1.5.0 images | grep mpi | awk '{print $1}'"
+        # print cmd
+        # os.system(cmd)
 
         # Start Container
-        cmd =  "./docker-1.5.0 run -d -p :10007:22 --name busybox_test mpiaas/archlinux"
+        cmd =  "./docker-1.5.0 run -d -p :10007:22 --name busybox_test mpiaas/%s" % (operating_system)
         print cmd
         os.system(cmd)
 
@@ -199,7 +196,7 @@ def main():
         print cmd
         os.system(cmd)
 
-        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "cd MPIaaS/app/tests/busybox/ && ./busybox.sh"' % str(client.strip())
+        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "cd MPIaaS/app/tests/%s/ && ./%s.sh"' % (str(client.strip()),str(test),str(test))
         print cmd
         os.system(cmd)
 
