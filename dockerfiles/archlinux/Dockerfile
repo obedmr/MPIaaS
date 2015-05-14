@@ -1,17 +1,18 @@
-FROM base/archlinux
+FROM bltavares/arch-ssh
 MAINTAINER obed.n.munoz@gmail.com
 
-# Install ArchLinux Development Tools
-RUN pacman-key --refresh-keys
-RUN pacman -Syu --noconfirm --needed base-devel wget python
-RUN useradd -G wheel builder || true
-RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-COPY yaourt.repo /tmp/
-RUN cat /tmp/yaourt.repo >> /etc/pacman.conf
+# Add MPI user
+RUN useradd mpiuser
+RUN echo -e "secure\nsecure" | passwd mpiuser
+RUN mkdir /home/mpiuser ; chown mpiuser.mpiuser /home/mpiuser
 
-# Install and configure custom software
+# Install Custom Software
+RUN pacman-key --refresh-keys
+RUN pacman -Syu --noconfirm  wget python rsync
 RUN pacman-db-upgrade
-RUN pacman -Syu --noconfirm yaourt
-RUN su builder -c "yaourt -Sy --noconfirm mpich"
-RUN rm -rf /var/cache/pacman/pkg/*
-RUN pacman -Rsn --noconfirm base-devel
+RUN wget http://share.obedmr.com/archlinux/sowing-1.1.17-1-any.pkg.tar.xz
+RUN pacman -U --noconfirm sowing-1.1.17-1-any.pkg.tar.xz
+RUN wget http://share.obedmr.com/archlinux/mpich-3.1.4-1-x86_64.pkg.tar.xz
+RUN pacman -U --noconfirm mpich-3.1.4-1-x86_64.pkg.tar.xz
+RUN rm *.pkg.tar.xz
+RUN echo "export PATH=$PATH:/opt/mpich/bin" >> /etc/profile
