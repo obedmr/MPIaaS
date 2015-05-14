@@ -30,4 +30,4 @@ RUN chown -R mpiuser /home/mpiuser/.ssh
 
 # Intall git
 RUN yum clean all
-RUN yum -y install git
+RUN yum -y install git --nogpgcheck
