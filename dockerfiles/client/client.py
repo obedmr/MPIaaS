@@ -79,7 +79,7 @@ class EchoClientFactory(ClientFactory):
 def main(reactor):
 
     factory = EchoClientFactory()
-    reactor.connectTCP(SERVER_IP, PORT, factory)
+    reactor.connectTCP(SERVER_IP, 8000, factory)
     return factory.done
 
 
