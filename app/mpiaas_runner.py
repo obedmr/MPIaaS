@@ -174,12 +174,14 @@ def main():
     os.system("python echoserv.py &")
 
     # wait of clients if they all exist .. exit
-    wait_for_clients(20,2)
+    wait_for_clients(20,20)
 
     # clean array of clients
 
     GLOBAL_CLIENTS_ADDR = list(set(GLOBAL_CLIENTS_ADDR))
-    
+   
+    print GLOBAL_CLIENTS_ADDR
+
     # run command
     for client in GLOBAL_CLIENTS_ADDR:
         print client.strip()
