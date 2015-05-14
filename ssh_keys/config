@@ -1,0 +1,63 @@
+Host 172.17.8.101
+    HostName 172.17.8.101
+    Port 10001
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.101
+    HostName 172.17.8.101
+    Port 10002
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+
+Host 172.17.8.101
+    HostName 172.17.8.101
+    Port 10003
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.102
+    HostName 172.17.8.102
+    Port 10001
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.102
+    HostName 172.17.8.102
+    Port 10002
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.102
+    HostName 172.17.8.102
+    Port 10003
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.103
+    HostName 172.17.8.103
+    Port 10001
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.103
+    HostName 172.17.8.103
+    Port 10002
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
+
+Host 172.17.8.103
+    HostName 172.17.8.103
+    Port 10003
+    User mpiuser
+    IdentityFile ./ssh_keys/mpiuser
+    StrictHostKeyChecking no
