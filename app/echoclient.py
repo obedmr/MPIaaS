@@ -18,6 +18,29 @@ LOCAL_IP = socket.gethostbyname(socket.gethostname())
 
 
 class EchoClient(LineReceiver):
+    global PORT
+    global SERVER_IP
+    global LOCAL_IP
+
+    parser = argparse.ArgumentParser(description='Run some funy tests !!')
+    
+    parser.add_argument('--localip', action="store", dest="localip",\
+            help="Local client IP addres")
+    parser.add_argument('--serverip', action="store", dest="serverip",\
+            help="IP addres of server")
+    parser.add_argument('--port', action="store", dest="port",\
+            help="Connection port")
+
+    args = parser.parse_args()
+    
+    if args.port:
+        PORT = int(args.port)
+    if args.serverip:
+        SERVER_IP = args.serverip
+    if args.localip:
+        LOCAL_IP = int(args.localip)
+
+
     end = "Bye-bye!"
 
     def connectionMade(self):
@@ -55,34 +78,9 @@ class EchoClientFactory(ClientFactory):
 
 def main(reactor):
 
-    global SERVER_IP
-    global CLIENT_IP
-    global PORT
-
-    parser = argparse.ArgumentParser(description='Run some funy tests !!')
-    group = parser.add_mutually_exclusive_group()
-    run_group_list = group.add_mutually_exclusive_group()
-    
-    run_group_list.add_argument('--localip', action="store", dest="localip",\
-            help="Local client IP addres")
-    run_group_list.add_argument('--serverip', action="store", dest="serverip",\
-            help="IP addres of server")
-    run_group_list.add_argument('--port', action="store", dest="port",\
-            help="Connection port")
-
-    args = parser.parse_args()
-
-    if args.port:
-        PORT = int(args.port)
-    if args.serverip:
-        SERVER_IP = args.serverip
-    if args.localip:
-        LOCAL_IP = int(args.localip)
-
     factory = EchoClientFactory()
     reactor.connectTCP(SERVER_IP, PORT, factory)
     return factory.done
-
 
 
 if __name__ == '__main__':
