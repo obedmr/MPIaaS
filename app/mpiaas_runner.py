@@ -16,11 +16,13 @@ GLOBAL_TEST="busybox"
 GLOBAL_OS="Ubuntu"
 GLOBAL_HW="VM"
 GLOBAL_NUM_CLIENTS=1
-
+GLOBAL_CLIENTS_ADDR = []
 
 
 def wait_for_clients(counter,delay):
-    
+   
+    global GLOBAL_CLIENTS_ADDR
+
     config = ConfigParser.ConfigParser()
     config.read(CONFIG_FILE)
     client_count = 0
@@ -36,6 +38,7 @@ def wait_for_clients(counter,delay):
         f = open(CONFIG_CONF)
         for line in f:
             if "CLIENT" in line:
+                GLOBAL_CLIENTS_ADDR.append(line.split("_")[1].replace("]",""))
                 client_count += 1
         f.close()
         if client_count >= GLOBAL_NUM_CLIENTS:
@@ -170,6 +173,40 @@ def main():
 
     # wait of clients if they all exist .. exit
     wait_for_clients(20,2)
+
+    # run command
+    for client in GLOBAL_CLIENTS_ADDR:
+        print client.strip()
+
+		# set up
+        cmd = "export DOCKER_HOST=tcp://%s:8000" % str(client.strip())
+        print cmd
+        os.system(cmd)
+
+        # Get iamges
+        cmd = "./docker-1.5.0 images | grep mpi | awk '{print $1}'"
+        print cmd
+        os.system(cmd)
+
+        # Start Container
+        cmd =  "./docker-1.5.0 run -d -p :10007:22 --name busybox_test mpiaas/archlinux"
+        print cmd
+        os.system(cmd)
+
+		# Remote command execution with ssh
+        cmd =  'ssh -F ./ssh_keys/config %s -p 10007  "ls -la"' % str(client.strip())
+        print cmd
+        os.system(cmd)
+
+        # Stop and Removal of container
+        cmd = "./docker-1.5.0 stop busybox_test"
+        print cmd
+        os.system(cmd)
+
+        cmd = "./docker-1.5.0 rm busybox_test"
+        print cmd
+        os.system(cmd)
+
 
 if __name__ == "__main__":
     main()
