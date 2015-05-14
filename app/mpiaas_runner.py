@@ -179,7 +179,7 @@ def main():
         print client.strip()
 
 		# set up
-        cmd = "export DOCKER_HOST=tcp://%s:8000" % str(client.strip())
+        cmd = "export DOCKER_HOST=tcp://%s:2375" % str(client.strip())
         print cmd
         os.system(cmd)
 
