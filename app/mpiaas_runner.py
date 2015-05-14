@@ -15,19 +15,39 @@ CONFIG_CONF = "setup.conf"
 GLOBAL_TEST="busybox"
 GLOBAL_OS="Ubuntu"
 GLOBAL_HW="VM"
+GLOBAL_NUM_CLIENTS=1
+
 
 
 def wait_for_clients(counter,delay):
+    
+    config = ConfigParser.ConfigParser()
+    config.read(CONFIG_FILE)
+    client_count = 0
+
     while counter:
         time.sleep(delay)
         print "Wait for clients"
         counter -= 1
+        
+
+        # count the number of clients
+
+        f = open(CONFIG_CONF)
+        for line in f:
+            if "CLIENT" in line:
+                client_count += 1
+        f.close()
+        if client_count >= GLOBAL_NUM_CLIENTS:
+            print "We have all the clients we need"
+            break
 
 def print_config(args):
 
     global GLOBAL_TEST
     global GLOBAL_OS
     global GLOBAL_HW
+    global GLOBAL_NUM_CLIENTS
 
     config = ConfigParser.ConfigParser()
     config.read(CONFIG_FILE)
@@ -57,6 +77,9 @@ def print_config(args):
         for item in config.items("HW"):
             if item[0] == args.hw:
                 GLOBAL_HW=args.hw
+
+    if args.hw:
+            GLOBAL_NUM_CLIENTS=args.num_clients
 
     parser = ConfigParser.SafeConfigParser()
 
@@ -95,6 +118,8 @@ def main():
             help="OS to run the tests")
     run_group_list.add_argument('--hw', action="store", dest="hw",\
             help="HW to run the tests")
+    run_group_list.add_argument('--num_clients', action="store", dest="num_clients",\
+            help="Number of clients to run")
 
     run_group_list.add_argument('--killserver', action="store_true",
             dest="kill_server",\
@@ -143,6 +168,7 @@ def main():
 
     os.system("python echoserv.py &")
 
+    # wait of clients if they all exist .. exit
     wait_for_clients(20,2)
 
 if __name__ == "__main__":
