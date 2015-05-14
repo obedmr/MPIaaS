@@ -23,4 +23,7 @@ RUN pacman -Sy --noconfirm python2 python2-twisted
 # Setup ssh keys
 RUN mkdir /home/mpiuser/.ssh
 COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
-RUN chown -R mpiuser /home/mpiuser/.ssh 
+RUN chown -R mpiuser /home/mpiuser/.ssh
+
+# Install git
+RUN pacman -Sy --noconfirm git

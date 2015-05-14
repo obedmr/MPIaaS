@@ -18,4 +18,7 @@ RUN apt-get -y install python python-twisted
 # Setup ssh keys
 RUN mkdir /home/mpiuser/.ssh
 COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
-RUN chown -R mpiuser /home/mpiuser/.ssh 
+RUN chown -R mpiuser /home/mpiuser/.ssh
+
+# Intall git
+RUN apt-get -y install git

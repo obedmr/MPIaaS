@@ -26,4 +26,8 @@ RUN yum -y install python-twisted-core --nogpgcheck
 # Setup ssh keys
 RUN mkdir /home/mpiuser/.ssh
 COPY ./mpiuser.pub /home/mpiuser/.ssh/authorized_keys
-RUN chown -R mpiuser /home/mpiuser/.ssh 
+RUN chown -R mpiuser /home/mpiuser/.ssh
+
+# Intall git
+RUN yum clean all
+RUN yum -y install git

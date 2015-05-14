@@ -38,7 +38,7 @@ class EchoClient(LineReceiver):
     if args.serverip:
         SERVER_IP = args.serverip
     if args.localip:
-        LOCAL_IP = int(args.localip)
+        LOCAL_IP = args.localip
 
 
     end = "Bye-bye!"
