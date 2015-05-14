@@ -5,4 +5,4 @@ MAINTAINER obed.n.munoz@gmail.com
 RUN apt-get -y update 
 
 # Install and configure custom software
-RUN apt-get -y install mpich
+RUN apt-get -y install mpich python3
