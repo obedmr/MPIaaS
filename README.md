@@ -24,7 +24,7 @@ How to run Python in CoreOS Containers
 ```
 	cd coreos-vagrant
 	vagrant ssh core-01
-	docker run -it mpiaas/ubuntu /bin/bash
+	docker run -it mpiaas/ubuntu python
 ```
 
 How to run tests
